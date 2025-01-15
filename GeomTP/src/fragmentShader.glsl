@@ -14,11 +14,11 @@ void main() {
     float dotProduct = dot(normalize(fNormal), normalize(fViewVector));
  
     // Contour detection: when dot product is near zero, it’s a contour
-    if (abs(dotProduct) < 0.05) {
+    if (abs(dotProduct) < 0.1) {
         fragColor = vec4(0.0, 0.0, 0.0, 1.0); // Black
     }
     // Visualizing curvature: use radial curvature to create color gradients
-    else if (abs(radCurvature) < 0.05) {
+    else if (abs(radCurvature) < 0.1) {
         fragColor = vec4(1.0, 0.0, 0.0, 1.0);  // Red
     } 
     else {

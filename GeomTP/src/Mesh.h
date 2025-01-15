@@ -35,7 +35,7 @@ public:
   void computeBoundingSphere(glm::vec3 &center, float &radius) const;
 
   void recomputePerVertexNormals(bool angleBased = false);
-  void recomputePerVertexTextureCoordinates( );
+  void recomputePerVertexTextureCoordinates();
 
   void init();
   void initOldGL();
@@ -44,85 +44,267 @@ public:
 
   void addPlan(float square_half_side = 1.0f);
 
+    void subdivideLoop() {
+    std::vector<glm::vec3> newVertices( _vertexPositions.size() , glm::vec3(0,0,0) );
+    std::vector<glm::uvec3> newTriangles;
+
+    struct Edge {
+      unsigned int a , b;
+      Edge( unsigned int c , unsigned int d ) : a( std::min<unsigned int>(c,d) ) , b( std::max<unsigned int>(c,d) ) {}
+      bool operator < ( Edge const & o ) const {   return a < o.a  ||  (a == o.a && b < o.b);  }
+      bool operator == ( Edge const & o ) const {   return a == o.a  &&  b == o.b;  }
+    };
+
+    std::map< Edge , unsigned int > newVertexOnEdge; // this will be useful to find out whether we already inserted an odd vertex or not
+    std::map< Edge , std::set< unsigned int > > trianglesOnEdge; // this will be useful to find out if an edge is boundary or not
+    std::vector< std::set< unsigned int > > neighboringVertices( _vertexPositions.size() ); // this will be used to store the adjacent vertices, i.e., neighboringVertices[i] will be the list of vertices that are adjacent to vertex i.
+    std::vector< bool > evenVertexIsBoundary( _vertexPositions.size() , false );
+
+    for(unsigned int tIt = 0 ; tIt < _triangleIndices.size() ; ++tIt) {
+      unsigned int a = _triangleIndices[tIt][0];
+      unsigned int b = _triangleIndices[tIt][1];
+      unsigned int c = _triangleIndices[tIt][2];
+
+      Edge ab(a, b);
+      Edge bc(b, c);
+      Edge ac(a, c);
+
+      trianglesOnEdge[ab].insert(tIt);
+      trianglesOnEdge[bc].insert(tIt);
+      trianglesOnEdge[ac].insert(tIt);
+
+      neighboringVertices[ a ].insert( b );
+      neighboringVertices[ a ].insert( c );
+      neighboringVertices[ b ].insert( a );
+      neighboringVertices[ b ].insert( c );
+      neighboringVertices[ c ].insert( a );
+      neighboringVertices[ c ].insert( b );
+    }
+
+    std::vector< unsigned int > evenVertexValence( _vertexPositions.size() , 0 );
+    for( unsigned int v = 0 ; v < _vertexPositions.size() ; ++v ) {
+      evenVertexValence[ v ] = neighboringVertices[ v ].size();
+    }
+
+    for (const auto& [edge, triangles] : trianglesOnEdge) { 
+        if (triangles.size() == 1) { 
+            evenVertexIsBoundary[edge.a] = true;
+            evenVertexIsBoundary[edge.b] = true;
+        }
+    }
+    
+    for(unsigned int v = 0 ; v < _vertexPositions.size() ; ++v) {
+      float alpha_n;
+      glm::vec3 sum(0.0f, 0.0f, 0.0f); 
+
+      if(evenVertexIsBoundary[v]){
+      for (unsigned int neighbor : neighboringVertices[v]) {
+          if(evenVertexIsBoundary[neighbor]){
+            sum += _vertexPositions[neighbor];
+         }
+      }
+
+      newVertices[v] = (6.0f / 8.0f) *_vertexPositions[v] + (1.0f / 8.0f )* sum;
+
+      }
+      else{
+        int valence = evenVertexValence[v];
+        if(valence == 3){
+          alpha_n = 3.0f / 16.0f;
+        }
+        else{
+          alpha_n = 3.0f / (8.0f*valence);
+        }
+        for (unsigned int neighbor : neighboringVertices[v]) {
+            sum += _vertexPositions[neighbor];
+        }
+        newVertices[v] = (1-valence*alpha_n)*_vertexPositions[v] + alpha_n*sum;
+      }
+    }
+
+    for(unsigned int tIt = 0 ; tIt < _triangleIndices.size() ; ++tIt) {
+      unsigned int a = _triangleIndices[tIt][0];
+      unsigned int b = _triangleIndices[tIt][1];
+      unsigned int c = _triangleIndices[tIt][2];
+
+
+      Edge Eab(a,b);
+      unsigned int oddVertexOnEdgeEab = 0;
+      if( newVertexOnEdge.find( Eab ) == newVertexOnEdge.end() ) {
+        newVertices.push_back( glm::vec3(0,0,0) );
+        oddVertexOnEdgeEab = newVertices.size() - 1;
+        newVertexOnEdge[Eab] = oddVertexOnEdgeEab;
+      }
+      else { oddVertexOnEdgeEab = newVertexOnEdge[Eab]; }
+
+      if (trianglesOnEdge[Eab].size() == 1) {
+          newVertices[oddVertexOnEdgeEab] = (_vertexPositions[a] + _vertexPositions[b]) / 2.0f;
+      }
+      else {
+          glm::vec3 sum_ab = _vertexPositions[a] + _vertexPositions[b];
+          glm::vec3 sum_jk(0.0f, 0.0f, 0.0f);
+
+          for (unsigned int triangleIndex : trianglesOnEdge[Eab]) {
+              const glm::uvec3 &triangle = _triangleIndices[triangleIndex];
+              for (unsigned int vertex : {triangle[0], triangle[1], triangle[2]}) {
+                  if (vertex != a && vertex != b) {
+                      sum_jk += _vertexPositions[vertex];
+                      break;
+                  }
+              }
+          }
+          newVertices[oddVertexOnEdgeEab] = (3.0f / 8.0f) * sum_ab + (1.0f / 8.0f) * sum_jk;
+      }
+      Edge Ebc(b,c);
+      unsigned int oddVertexOnEdgeEbc = 0;
+      if( newVertexOnEdge.find( Ebc ) == newVertexOnEdge.end() ) {
+        newVertices.push_back( glm::vec3(0,0,0) );
+        oddVertexOnEdgeEbc = newVertices.size() - 1;
+        newVertexOnEdge[Ebc] = oddVertexOnEdgeEbc;
+      }
+      else { oddVertexOnEdgeEbc = newVertexOnEdge[Ebc]; }
+      if (trianglesOnEdge[Ebc].size() == 1) {
+          newVertices[oddVertexOnEdgeEbc] = (_vertexPositions[b] + _vertexPositions[c]) / 2.0f;
+      }
+      else {
+          glm::vec3 sum_bc = _vertexPositions[b] + _vertexPositions[c];
+          glm::vec3 sum_pq(0.0f, 0.0f, 0.0f);
+
+          for (unsigned int triangleIndex : trianglesOnEdge[Ebc]) {
+              const glm::uvec3 &triangle = _triangleIndices[triangleIndex];
+              for (unsigned int vertex : {triangle[0], triangle[1], triangle[2]}) {
+                  if (vertex != b && vertex != c) {
+                      sum_pq += _vertexPositions[vertex];
+                      break;
+                  }
+              }
+          }
+          newVertices[oddVertexOnEdgeEbc] = (3.0f / 8.0f) * sum_bc + (1.0f / 8.0f) * sum_pq;
+      }
+
+
+      Edge Eca(c,a);
+      unsigned int oddVertexOnEdgeEca = 0;
+      if( newVertexOnEdge.find( Eca ) == newVertexOnEdge.end() ) {
+        newVertices.push_back( glm::vec3(0,0,0) );
+        oddVertexOnEdgeEca = newVertices.size() - 1;
+        newVertexOnEdge[Eca] = oddVertexOnEdgeEca;
+      }
+      else { oddVertexOnEdgeEca = newVertexOnEdge[Eca]; }
+      if (trianglesOnEdge[Eca].size() == 1) {
+          newVertices[oddVertexOnEdgeEca] = (_vertexPositions[c] + _vertexPositions[a]) / 2.0f;
+      }
+      else {
+          glm::vec3 sum_ac = _vertexPositions[a] + _vertexPositions[c];
+          glm::vec3 sum_de(0.0f, 0.0f, 0.0f);
+
+          for (unsigned int triangleIndex : trianglesOnEdge[Eca]) {
+              const glm::uvec3 &triangle = _triangleIndices[triangleIndex];
+              for (unsigned int vertex : {triangle[0], triangle[1], triangle[2]}) {
+                  if (vertex != a && vertex != c) {
+                      sum_de += _vertexPositions[vertex];
+                      break;
+                  }
+              }
+          }
+          newVertices[oddVertexOnEdgeEca] = (3.0f / 8.0f) * sum_ac + (1.0f / 8.0f) * sum_de;
+      }
+
+      newTriangles.push_back( glm::uvec3( a , oddVertexOnEdgeEab , oddVertexOnEdgeEca ) );
+      newTriangles.push_back( glm::uvec3( oddVertexOnEdgeEab , b , oddVertexOnEdgeEbc ) );
+      newTriangles.push_back( glm::uvec3( oddVertexOnEdgeEca , oddVertexOnEdgeEbc , c ) );
+      newTriangles.push_back( glm::uvec3( oddVertexOnEdgeEab , oddVertexOnEdgeEbc , oddVertexOnEdgeEca ) );
+    }
+
+    _triangleIndices = newTriangles;
+    _vertexPositions = newVertices;
+    recomputePerVertexNormals( );
+    recomputePerVertexTextureCoordinates( );
+  }
+
+
   void Mesh::computeVertexCurvatures() {
-    const auto &positions = vertexPositions();
-    const auto &normals = vertexNormals();
-    const auto &triangles = triangleIndices();
+    // Clear previous results
+    _vertexCurvatures.resize(_vertexPositions.size(), glm::vec2(0.0f));
+    _principalDir1.resize(_vertexPositions.size(), glm::vec3(0.0f));
+    _principalDir2.resize(_vertexPositions.size(), glm::vec3(0.0f));
 
-    size_t numVertices = positions.size();
-    size_t numTriangles = triangles.size();
+    // Step 1: Initialize containers for curvature tensors
+    std::vector<glm::mat2x2> curvatureTensors(_vertexPositions.size(), glm::mat2x2(0.0f));
+    std::vector<float> vertexWeights(_vertexPositions.size(), 0.0f); // For weighted averaging
 
-    // Initialize curvature tensors and weights
-    std::vector<glm::mat2x2> curvatureTensors(numVertices, glm::mat2x2(0.0f));
-    std::vector<float> vertexWeights(numVertices, 0.0f);
+    // Step 2: Iterate over all triangles
+    for (const auto& tri : _triangleIndices) {
+        // Get the positions and normals of the triangle vertices
+        glm::vec3 v0 = _vertexPositions[tri.x];
+        glm::vec3 v1 = _vertexPositions[tri.y];
+        glm::vec3 v2 = _vertexPositions[tri.z];
 
-    // Loop over triangles
-    for (size_t t = 0; t < numTriangles; ++t) {
-        const glm::uvec3 &tri = triangles[t];
-        const glm::vec3 &p0 = positions[tri.x];
-        const glm::vec3 &p1 = positions[tri.y];
-        const glm::vec3 &p2 = positions[tri.z];
+        glm::vec3 n0 = _vertexNormals[tri.x];
+        glm::vec3 n1 = _vertexNormals[tri.y];
+        glm::vec3 n2 = _vertexNormals[tri.z];
 
-        const glm::vec3 &n0 = normals[tri.x];
-        const glm::vec3 &n1 = normals[tri.y];
-        const glm::vec3 &n2 = normals[tri.z];
+        // Edges of the triangle
+        glm::vec3 e0 = v1 - v0;
+        glm::vec3 e1 = v2 - v1;
+        glm::vec3 e2 = v0 - v2;
 
-        // Edge vectors
-        glm::vec3 e0 = p1 - p0;
-        glm::vec3 e1 = p2 - p1;
-        glm::vec3 e2 = p0 - p2;
-
-        // Normal differences
+        // Differences in normals along edges
         glm::vec3 dn0 = n1 - n0;
         glm::vec3 dn1 = n2 - n1;
         glm::vec3 dn2 = n0 - n2;
 
-        // Build the least-squares system for II
-        glm::mat2x3 A = {
-            { glm::dot(e0, n0), glm::dot(e0, n1), glm::dot(e0, n2) },
-            { glm::dot(e1, n0), glm::dot(e1, n1), glm::dot(e1, n2) }
+        // Approximate curvature tensor for each vertex of the triangle
+        auto computeTensor = [](const glm::vec3& e, const glm::vec3& dn) -> glm::mat2x2 {
+            float lenSq = glm::dot(e, e);
+            if (lenSq == 0.0f) return glm::mat2x2(0.0f); // Avoid division by zero
+            glm::vec2 projE = glm::vec2(glm::dot(e, glm::vec3(1, 0, 0)), glm::dot(e, glm::vec3(0, 1, 0)));
+            glm::vec2 projDn = glm::vec2(glm::dot(dn, glm::vec3(1, 0, 0)), glm::dot(dn, glm::vec3(0, 1, 0)));
+            return glm::outerProduct(projDn / lenSq, projE);
         };
-        glm::mat3x2 B = glm::transpose(A);
-        glm::mat2x2 II = glm::inverse(glm::transpose(A) * A) * B;
 
-        // Compute the area-weighted contribution to vertices
-        float area = 0.5f * glm::length(glm::cross(e0, e1));
-        glm::vec3 faceNormal = glm::normalize(glm::cross(e0, e1));
+        glm::mat2x2 t0 = computeTensor(e0, dn0);
+        glm::mat2x2 t1 = computeTensor(e1, dn1);
+        glm::mat2x2 t2 = computeTensor(e2, dn2);
 
-        // Accumulate per-vertex curvature tensors
-        for (int i = 0; i < 3; ++i) {
-            int vertex = tri[i];
-            curvatureTensors[vertex] += II * area;
-            vertexWeights[vertex] += area;
-        }
+        // Step 3: Aggregate tensors for each vertex
+        curvatureTensors[tri.x] += t0;
+        curvatureTensors[tri.y] += t1;
+        curvatureTensors[tri.z] += t2;
+
+        // Use triangle area as weight
+        float area = 0.5f * glm::length(glm::cross(e0, e2));
+        vertexWeights[tri.x] += area;
+        vertexWeights[tri.y] += area;
+        vertexWeights[tri.z] += area;
     }
 
-    // Normalize curvature tensors at vertices and compute principal directions/curvatures
-    _vertexCurvatures.resize(numVertices, glm::vec2(0.0f));
-    _principalDir1.resize(numVertices, glm::vec3(0.0f));
-    _principalDir2.resize(numVertices, glm::vec3(0.0f));
-
-    for (size_t v = 0; v < numVertices; ++v) {
-        if (vertexWeights[v] > 0.0f) {
-            curvatureTensors[v] /= vertexWeights[v];
+    // Step 4: Normalize tensors and compute eigenvalues/vectors
+    for (size_t i = 0; i < _vertexPositions.size(); ++i) {
+        if (vertexWeights[i] > 0.0f) {
+            curvatureTensors[i] /= vertexWeights[i]; // Average tensor
         }
 
-        // Diagonalize the 2x2 curvature tensor
-        glm::mat2x2 curvatureTensor = curvatureTensors[v]; // for the matrix to be symmetric
-        glm::mat2x2 symMatrix = 0.5f * (curvatureTensor + glm::transpose(curvatureTensor));
+        // Perform eigen decomposition to get principal curvatures and directions
+        glm::mat2x2& tensor = curvatureTensors[i];
         glm::vec2 eigenvalues;
-        glm::mat2x2 eigenvectors;
+        glm::mat2 eigenvectors;
 
-        computeEigenDecomposition(symMatrix, eigenvalues, eigenvectors);
+        computeEigenDecomposition(tensor, eigenvalues, eigenvectors);
 
-        _vertexCurvatures[v] = eigenvalues;
-        _principalDir1[v] = glm::normalize(glm::vec3(eigenvectors[0][0], eigenvectors[1][0], 0.0f)); // Principal direction for κ1
-        _principalDir2[v] = glm::normalize(glm::vec3(eigenvectors[0][1], eigenvectors[1][1], 0.0f)); // Principal direction for κ2
+        _vertexCurvatures[i] = eigenvalues; // Principal curvatures (κ1, κ2)
 
-    }   
-}
+        // Map principal directions back to 3D (assuming eigenvectors are in tangent plane)
+        glm::vec3 tangentX = glm::normalize(glm::cross(_vertexNormals[i], glm::vec3(1, 0, 0)));
+        if (glm::length(tangentX) < 1e-6f) {
+            tangentX = glm::normalize(glm::cross(_vertexNormals[i], glm::vec3(0, 1, 0)));
+        }
+        glm::vec3 tangentY = glm::normalize(glm::cross(_vertexNormals[i], tangentX));
 
-
+        _principalDir1[i] = tangentX * eigenvectors[0][0] + tangentY * eigenvectors[1][0];
+        _principalDir2[i] = tangentX * eigenvectors[0][1] + tangentY * eigenvectors[1][1];
+    }
+  }
 
 private:
   std::vector<glm::vec3> _vertexPositions;

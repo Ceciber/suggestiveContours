@@ -291,6 +291,12 @@ struct Scene {
     mainShader->stop();
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   }
+
+  void subdivideCenterMesh() {
+    rhino->subdivideLoop();
+    rhino->computeVertexCurvatures();
+    rhino->init();
+  }
   
 };
 
@@ -326,6 +332,8 @@ void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods
 {
   if(action == GLFW_PRESS && key == GLFW_KEY_H) {
     printHelp();
+  } else if(action == GLFW_PRESS && key == GLFW_KEY_L) {
+    g_scene.subdivideCenterMesh();
   } else if(action == GLFW_PRESS && key == GLFW_KEY_S) {
     g_scene.saveShadowMapsPpm = true;
   } else if(action == GLFW_PRESS && key == GLFW_KEY_T) {
@@ -355,8 +363,10 @@ void cursorPosCallback(GLFWwindow *window, double xpos, double ypos)
     cameraPosition = g_cam->getPosition();
   } else if(g_panningP) {
     g_cam->setPosition(g_baseTrans + g_meshScale*glm::vec3(dx, dy, 0.0));
+    cameraPosition = g_cam->getPosition();
   } else if(g_zoomingP) {
     g_cam->setPosition(g_baseTrans + g_meshScale*glm::vec3(0.0, 0.0, dy));
+    cameraPosition = g_cam->getPosition();
   }
 }
 
