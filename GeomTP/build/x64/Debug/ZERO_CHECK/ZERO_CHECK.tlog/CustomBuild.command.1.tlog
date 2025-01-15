@@ -1,0 +1,10 @@
+^C:\USERS\CECIL\DOWNLOADS\PROJ\GEOMTP\BUILD\CMAKEFILES\3D3FCB979FFBBB737B52AAD11B88563F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/GeomTP/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/cecil/Downloads/Proj/GeomTP/build/tpSubdiv.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

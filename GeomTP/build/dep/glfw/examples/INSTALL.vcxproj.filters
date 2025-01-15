@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\build\CMakeFiles\848b2061e6efa76846f1e2eb2d9652d5\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D0DCFCBD-A50D-3530-B5CD-713DC5C65825}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

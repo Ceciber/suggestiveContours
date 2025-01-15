@@ -1,0 +1,15 @@
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\context.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\context.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\init.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\init.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\input.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\input.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\monitor.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\monitor.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\vulkan.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\vulkan.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\window.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\window.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_init.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_init.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_joystick.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_joystick.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_monitor.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_monitor.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_time.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_time.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_thread.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_thread.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_window.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\win32_window.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\wgl_context.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\wgl_context.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\egl_context.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\egl_context.obj
+C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\osmesa_context.c;C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\src\glfw.dir\Debug\osmesa_context.obj
