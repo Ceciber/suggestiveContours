@@ -12,8 +12,8 @@ C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake
 C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake
 C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/CMakeLists.txt
-C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/cmake_uninstall.cmake.in
-C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/src/glfw3.pc.in
-C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/src/glfw3Config.cmake.in
-C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/src/glfw_config.h.in
+D:/Proj/GeomTP/dep/glfw/CMakeLists.txt
+D:/Proj/GeomTP/dep/glfw/cmake_uninstall.cmake.in
+D:/Proj/GeomTP/dep/glfw/src/glfw3.pc.in
+D:/Proj/GeomTP/dep/glfw/src/glfw3Config.cmake.in
+D:/Proj/GeomTP/dep/glfw/src/glfw_config.h.in

@@ -5,6 +5,7 @@ in vec3 fNormal;        // Normal in world space
 in vec3 fViewVector;    // View vector in world space
 in vec2 fTexCoord;      // Texture coordinates (optional for rendering)
 in float radCurvature;
+in float dRadCurvature;
 
 out vec4 fragColor;     // Output color of the fragment
 
@@ -18,7 +19,7 @@ void main() {
         fragColor = vec4(0.0, 0.0, 0.0, 1.0); // Black
     }
     // Visualizing curvature: use radial curvature to create color gradients
-    else if (abs(radCurvature) < 0.1) {
+    else if (abs(radCurvature) < 0.1 && dRadCurvature > 0.0) {
         fragColor = vec4(1.0, 0.0, 0.0, 1.0);  // Red
     } 
     else {

@@ -21,6 +21,7 @@ out vec3 fViewVector;     // View vector in world space
 out vec2 fTexCoord;       // Texture coordinates
 
 out float radCurvature;
+out float dRadCurvature;
 
 void main() {
     // Transform the position to world space and pass it to the fragment shader
@@ -41,6 +42,15 @@ void main() {
     float cos2Phi = dot(w, pDir1) * dot(w, pDir1);
     float sin2Phi = dot(w, pDir2) * dot(w, pDir2);
     radCurvature = curvature.x * cos2Phi + curvature.y * sin2Phi; // κ_r
+
+    // Compute directional derivative Dwκ_r (using finite difference approximation)
+    float epsilon = 0.001; // Small offset
+    vec3 perturbedW = normalize(w + vec3(epsilon, 0.0, 0.0)); // Slightly offset direction
+    float cos2Phi_perturbed = dot(perturbedW, pDir1) * dot(perturbedW, pDir1);
+    float sin2Phi_perturbed = dot(perturbedW, pDir2) * dot(perturbedW, pDir2);
+    float radCurvature_perturbed = curvature.x * cos2Phi_perturbed + curvature.y * sin2Phi_perturbed;
+
+    dRadCurvature = (radCurvature_perturbed - radCurvature) / epsilon;
 
     // Compute the final position of the vertex in clip space
     gl_Position = projMat * viewMat * modelMat * vec4(vPosition, 1.0);

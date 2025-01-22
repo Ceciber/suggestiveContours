@@ -2,100 +2,100 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\boing.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\boing.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\clipboard.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\clipboard.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\cursor.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\cursor.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\empty.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\empty.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\events.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\events.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\gamma.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\gamma.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\gears.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\gears.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\glfwinfo.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\glfwinfo.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\heightmap.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\heightmap.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\icon.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\icon.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\iconify.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\iconify.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\inputlag.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\inputlag.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\joysticks.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\joysticks.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\monitors.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\monitors.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\msaa.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\msaa.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\offscreen.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\offscreen.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\opacity.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\opacity.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\particles.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\particles.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\reopen.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\reopen.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\sharing.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\sharing.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\simple.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\simple.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\splitview.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\splitview.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\tearing.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\tearing.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\threads.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\threads.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\timeout.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\timeout.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\title.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\title.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\Debug\tpSubdiv.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\Debug\tpSubdiv.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\triangle-vulkan.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\triangle-vulkan.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\examples\Debug\wave.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\examples\Debug\wave.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\dep\glfw\tests\Debug\windows.exe</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\dep\glfw\tests\Debug\windows.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\cecil\Downloads\Proj\GeomTP\build\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>D:\Proj\GeomTP\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

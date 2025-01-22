@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/examples
+# Install script for directory: D:/Proj/GeomTP/dep/glfw/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

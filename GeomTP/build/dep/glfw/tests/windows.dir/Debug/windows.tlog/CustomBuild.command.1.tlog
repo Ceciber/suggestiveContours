@@ -1,6 +1,6 @@
-^C:\USERS\CECIL\DOWNLOADS\PROJ\GEOMTP\DEP\GLFW\TESTS\CMAKELISTS.TXT
+^D:\PROJ\GEOMTP\DEP\GLFW\TESTS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/GeomTP/build --check-stamp-file C:/Users/cecil/Downloads/Proj/GeomTP/build/dep/glfw/tests/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/GeomTP/build --check-stamp-file D:/Proj/GeomTP/build/dep/glfw/tests/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
