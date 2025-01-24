@@ -11,6 +11,9 @@
 #include <string>
 #include <memory>
 
+#undef max
+#undef min
+
 Mesh::~Mesh()
 {
   clear();
@@ -183,6 +186,13 @@ void Mesh::init()
   glBindBuffer(GL_ARRAY_BUFFER, _pDir2Vbo);
   glBufferData(GL_ARRAY_BUFFER, _principalDir2.size() * sizeof(glm::vec3), _principalDir2.data(), GL_STATIC_DRAW);
 
+  glGenBuffers(1, &_radCurvatureVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, _radCurvatureVbo);
+  glBufferData(GL_ARRAY_BUFFER, _vertexRadialCurvatures.size() * sizeof(glm::vec3), _vertexRadialCurvatures.data(), GL_STATIC_DRAW);
+
+  glGenBuffers(1, &_gradKappaRVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, _gradKappaRVbo);
+  glBufferData(GL_ARRAY_BUFFER, _vertexGradKappaR.size() * sizeof(glm::vec3), _vertexGradKappaR.data(), GL_STATIC_DRAW);
 
   // Create a single handle that joins together attributes (vertex positions, normals) and connectivity (triangles indices)
   glGenVertexArrays(1, &_vao);
@@ -211,6 +221,15 @@ void Mesh::init()
   glEnableVertexAttribArray(5);
   glBindBuffer(GL_ARRAY_BUFFER, _pDir2Vbo);
   glVertexAttribPointer(5, 3, GL_FLOAT, GL_FALSE, 0, (void*)0); // Attribute 5 for principalDir2 (3 floats per vertex)
+
+  glEnableVertexAttribArray(6); // Assuming location=6 for κr
+  glBindBuffer(GL_ARRAY_BUFFER, _radCurvatureVbo);
+  glVertexAttribPointer(6, 1, GL_FLOAT, GL_FALSE, 0, nullptr);
+
+  glEnableVertexAttribArray(7); // Assuming location=7 for ∇κr
+  glBindBuffer(GL_ARRAY_BUFFER, _gradKappaRVbo);
+  glVertexAttribPointer(7, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+
 
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ibo);
 
@@ -311,5 +330,7 @@ void loadOFF(const std::string &filename, std::shared_ptr<Mesh> meshPtr)
   meshPtr->recomputePerVertexNormals();
   meshPtr->recomputePerVertexTextureCoordinates();
   meshPtr->computeVertexCurvatures();
+  meshPtr->computeVertexRadialCurvature();
+  meshPtr->computeGradientOfRadialCurvature();
   std::cout << " > Mesh <" << filename << "> loaded" <<  std::endl;
 }

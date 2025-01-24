@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B83BDD2B-C54B-3B63-B869-7443CBB87266}</ProjectGuid>
+    <ProjectGuid>{5B6AE301-9D6A-351A-8AA6-D683F2562939}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\libigl\include;D:\Proj\GeomTP\libigl\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\libigl\include;D:\Proj\GeomTP\libigl\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\libigl\include;D:\Proj\GeomTP\libigl\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\libigl\include;D:\Proj\GeomTP\libigl\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\CMakeLists.txt">
+    <CustomBuild Include="D:\Proj\GeomTP\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Proj/GeomTP/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cecil\Downloads\Proj\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Proj\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Proj/GeomTP/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cecil\Downloads\Proj\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Proj\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Proj/GeomTP/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cecil\Downloads\Proj\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Proj\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Proj/GeomTP/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,146 +159,146 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\cecil\Downloads\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cecil\Downloads\Proj\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;D:\Proj\build\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Proj\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\ZERO_CHECK.vcxproj">
-      <Project>{09582A08-F49E-344D-B1A5-7E1623480726}</Project>
+    <ProjectReference Include="D:\Proj\build\ZERO_CHECK.vcxproj">
+      <Project>{C4AD00C4-DDDE-3C40-A36E-8BA498808E1F}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\boing.vcxproj">
-      <Project>{25343D0E-3A9D-37D3-B663-8EFF4C8E2E91}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\boing.vcxproj">
+      <Project>{0B95F033-FCA0-358F-A784-9C41059CE5E0}</Project>
       <Name>boing</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\clipboard.vcxproj">
-      <Project>{02C4E53B-4243-3F93-9D10-9404117187DE}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\clipboard.vcxproj">
+      <Project>{534B2C5C-BB70-3087-8745-7A54A098A46B}</Project>
       <Name>clipboard</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\cursor.vcxproj">
-      <Project>{96D4FAE6-1716-3EAA-9A55-A95BEFA02E99}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\cursor.vcxproj">
+      <Project>{7ED9168B-57F8-3C02-B99F-C40D12D757E2}</Project>
       <Name>cursor</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\empty.vcxproj">
-      <Project>{E4D920AF-5DFA-3D0B-8492-7887306E517E}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\empty.vcxproj">
+      <Project>{18CD09C1-8975-3D85-8BF2-25A4D159BF08}</Project>
       <Name>empty</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\events.vcxproj">
-      <Project>{1F4D637B-D0CE-3936-8E9B-395304F9E0D0}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\events.vcxproj">
+      <Project>{BC3F31F9-A955-32EC-A971-A9D6BC884100}</Project>
       <Name>events</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\gamma.vcxproj">
-      <Project>{5208146B-E417-3F83-9618-81908E7645F9}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\gamma.vcxproj">
+      <Project>{5952FDB7-327D-36BD-8935-4B58791D0399}</Project>
       <Name>gamma</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\gears.vcxproj">
-      <Project>{A365D469-54A4-3698-8847-6DF786E28C2A}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\gears.vcxproj">
+      <Project>{F5369648-7D6B-3BD3-8C4E-31A2CBC44426}</Project>
       <Name>gears</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glad\glad.vcxproj">
-      <Project>{4B9944AA-1F19-3A43-8666-9DA01A4878B6}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glad\glad.vcxproj">
+      <Project>{F5E8D6E3-6A1B-3379-BD33-889C92440ABC}</Project>
       <Name>glad</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\src\glfw.vcxproj">
-      <Project>{2AEDDFB8-8DB8-37B2-B913-034BD5DC5F74}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\src\glfw.vcxproj">
+      <Project>{AEC4C55F-87D9-342B-B2C0-17897EA5DA8C}</Project>
       <Name>glfw</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\glfwinfo.vcxproj">
-      <Project>{2F60F882-943B-3CB0-B737-0507B200FD1D}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\glfwinfo.vcxproj">
+      <Project>{353D8B74-24FB-37B7-8C39-5242A24DE576}</Project>
       <Name>glfwinfo</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\heightmap.vcxproj">
-      <Project>{85C0268C-3A0C-3218-B180-12E650FC7494}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\heightmap.vcxproj">
+      <Project>{B2FB0BF0-4DF9-3438-BA2C-9003BABF0C32}</Project>
       <Name>heightmap</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\icon.vcxproj">
-      <Project>{591E80D7-126A-37FA-A460-F7A267B1FFF7}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\icon.vcxproj">
+      <Project>{20F34291-E54E-30F3-85A4-10A981D691A9}</Project>
       <Name>icon</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\iconify.vcxproj">
-      <Project>{32A0CC2A-2BF2-3FA1-A3CB-EF20E4069BDF}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\iconify.vcxproj">
+      <Project>{FA2F94F6-4B19-3A2D-914C-702EFD842201}</Project>
       <Name>iconify</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\inputlag.vcxproj">
-      <Project>{371F7A15-77B1-3616-A491-52F105A01630}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\inputlag.vcxproj">
+      <Project>{0BA4BCB1-A609-3374-AC13-555968CEB3BA}</Project>
       <Name>inputlag</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\joysticks.vcxproj">
-      <Project>{63440547-AE04-39B4-857F-63DAD3CD1706}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\joysticks.vcxproj">
+      <Project>{8DA1A0F4-A06C-3F72-A462-94526AD8D617}</Project>
       <Name>joysticks</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\monitors.vcxproj">
-      <Project>{1F973228-7023-36DD-9CF1-99ECCE410E46}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\monitors.vcxproj">
+      <Project>{818EE774-5669-3F62-B564-844946562BF9}</Project>
       <Name>monitors</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\msaa.vcxproj">
-      <Project>{80D8C310-3FEB-356A-9FED-F82A70AB2697}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\msaa.vcxproj">
+      <Project>{6CD7A240-D479-3F6E-A6D2-397B9FE352D8}</Project>
       <Name>msaa</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\offscreen.vcxproj">
-      <Project>{E5B9CAEA-5363-323C-8CB6-F5CDF040CBFD}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\offscreen.vcxproj">
+      <Project>{30C73A8E-7697-3735-B190-36AAE11797BD}</Project>
       <Name>offscreen</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\opacity.vcxproj">
-      <Project>{DA24EE99-B4D8-3A9D-9178-46AE1B396AC5}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\opacity.vcxproj">
+      <Project>{04BA47AE-7D17-342C-A051-76AD7E481A4A}</Project>
       <Name>opacity</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\particles.vcxproj">
-      <Project>{CFC39072-2797-3241-8270-B0D92EF7D02E}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\particles.vcxproj">
+      <Project>{8E1E59EB-A44F-3A37-9C17-864328DE2B93}</Project>
       <Name>particles</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\reopen.vcxproj">
-      <Project>{1A52A9A5-8C3F-30F2-8E32-6D5B2353D0A5}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\reopen.vcxproj">
+      <Project>{72045BA4-7F52-3C2F-B827-4F6E33D2B597}</Project>
       <Name>reopen</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\sharing.vcxproj">
-      <Project>{2A28CC74-E851-344B-8B32-87FECAD7FB43}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\sharing.vcxproj">
+      <Project>{F324593B-6994-3CF0-9E0D-307B1419851E}</Project>
       <Name>sharing</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\simple.vcxproj">
-      <Project>{8040CB62-B533-3B54-A90E-13CBADAF3AE2}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\simple.vcxproj">
+      <Project>{249CBBF8-3A4E-368D-AA25-E78A5BB4E5B1}</Project>
       <Name>simple</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\splitview.vcxproj">
-      <Project>{329294BD-646F-3732-890F-9403EEF2D0D7}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\splitview.vcxproj">
+      <Project>{C5E7A446-F182-36A1-9737-AAA9CAF7CED6}</Project>
       <Name>splitview</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\tearing.vcxproj">
-      <Project>{8E6A9695-6FD2-37C0-8D9C-847462F80FCC}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\tearing.vcxproj">
+      <Project>{3DAC7747-C554-38D8-A6CB-6C37A8A528C4}</Project>
       <Name>tearing</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\threads.vcxproj">
-      <Project>{67F98AC0-FED1-30E6-9594-145640719BCE}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\threads.vcxproj">
+      <Project>{AB0F1005-0896-34FE-953F-F90C6C3C2610}</Project>
       <Name>threads</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\timeout.vcxproj">
-      <Project>{716679EC-01AB-38F1-8433-205D97AEABB4}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\timeout.vcxproj">
+      <Project>{02A6B54F-CA4F-3A38-88B3-D2712AC223B7}</Project>
       <Name>timeout</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\title.vcxproj">
-      <Project>{0197C360-E600-3D7A-9595-F0196D683E36}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\title.vcxproj">
+      <Project>{A77CBA09-89E5-3B94-B146-5FCD2BA27021}</Project>
       <Name>title</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\tpSubdiv.vcxproj">
-      <Project>{8C0A5F9A-F513-3F08-AD90-B92D57180896}</Project>
+    <ProjectReference Include="D:\Proj\build\tpSubdiv.vcxproj">
+      <Project>{858A2A96-0868-3EC9-9D24-FD3EC7F20008}</Project>
       <Name>tpSubdiv</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\triangle-vulkan.vcxproj">
-      <Project>{ADD9D6CD-45CB-3E1A-9FCB-451977CF14DD}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\triangle-vulkan.vcxproj">
+      <Project>{A0AD6E0B-BD3B-321A-9C54-69174BE5A1F1}</Project>
       <Name>triangle-vulkan</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\wave.vcxproj">
-      <Project>{32A027B4-6C0C-3CE1-8100-078E84B37410}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\examples\wave.vcxproj">
+      <Project>{81310852-7315-34E1-BD4A-0BD68EA1923F}</Project>
       <Name>wave</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\tests\windows.vcxproj">
-      <Project>{39396914-5BFB-3397-B512-48A070FFB296}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\tests\windows.vcxproj">
+      <Project>{7909A138-0682-3AE7-B2DA-E773B5FD3482}</Project>
       <Name>windows</Name>
     </ProjectReference>
   </ItemGroup>

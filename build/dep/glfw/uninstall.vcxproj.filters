@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\build\CMakeFiles\da732f87c1f3bc4b6b66eeb53066eb03\uninstall.rule">
+    <CustomBuild Include="D:\Proj\build\CMakeFiles\0278202694115c6a80942a863574b713\uninstall.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\CMakeLists.txt" />
+    <CustomBuild Include="D:\Proj\GeomTP\dep\glfw\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\CMakeFiles\uninstall" />
+    <None Include="D:\Proj\build\dep\glfw\CMakeFiles\uninstall" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{FF13CC5D-CF61-363C-803C-EA43B75C2591}</UniqueIdentifier>
+      <UniqueIdentifier>{E74B2C10-0896-338F-948F-625559888124}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

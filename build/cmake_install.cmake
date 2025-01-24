@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/cecil/Downloads/Proj/GeomTP
+# Install script for directory: D:/Proj/GeomTP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/cecil/Downloads/Proj/build/dep/glad/cmake_install.cmake")
-  include("C:/Users/cecil/Downloads/Proj/build/dep/glfw/cmake_install.cmake")
-  include("C:/Users/cecil/Downloads/Proj/build/dep/glm/cmake_install.cmake")
+  include("D:/Proj/build/dep/glad/cmake_install.cmake")
+  include("D:/Proj/build/dep/glfw/cmake_install.cmake")
+  include("D:/Proj/build/dep/glm/cmake_install.cmake")
 
 endif()
 
@@ -55,6 +55,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/cecil/Downloads/Proj/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/Proj/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

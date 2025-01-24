@@ -67,7 +67,7 @@ double g_baseX = 0.0, g_baseY = 0.0;
 glm::vec3 g_baseTrans(0.0);
 glm::vec3 g_baseRot(0.0);
 
-glm::vec3 cameraPosition;
+glm::vec3 cameraPosition(0.0f, 5.0f, 10.0f);
 
 // timer
 float g_appTimer = 0.0;
@@ -286,6 +286,7 @@ struct Scene {
     mainShader->set("modelMat", rhinoMat);
     mainShader->set("normMat", glm::mat3(glm::inverseTranspose(rhinoMat)));
 
+    rhino->setCameraPosition(cameraPosition);
     rhino->render();
 
     mainShader->stop();
@@ -295,6 +296,8 @@ struct Scene {
   void subdivideCenterMesh() {
     rhino->subdivideLoop();
     rhino->computeVertexCurvatures();
+    rhino->computeVertexRadialCurvature();
+    rhino->computeGradientOfRadialCurvature();
     rhino->init();
   }
   

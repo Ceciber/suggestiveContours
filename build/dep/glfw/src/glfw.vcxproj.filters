@@ -1,93 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\context.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\init.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\input.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\monitor.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\vulkan.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\vulkan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\window.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_init.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_joystick.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_joystick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_monitor.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_time.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_time.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_thread.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_window.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\win32_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\wgl_context.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\wgl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\egl_context.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\egl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\osmesa_context.c">
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\src\osmesa_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\internal.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\mappings.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\mappings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\src\glfw_config.h">
+    <ClInclude Include="D:\Proj\build\dep\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include\GLFW\glfw3.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\include\GLFW\glfw3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include\GLFW\glfw3native.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\include\GLFW\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_platform.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\win32_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\win32_joystick.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\win32_joystick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\wgl_context.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\wgl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\egl_context.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\egl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\osmesa_context.h">
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\src\osmesa_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\Proj\GeomTP\dep\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{46CF9E7F-996E-34F3-A4C3-3E5961FEF6E5}</UniqueIdentifier>
+      <UniqueIdentifier>{17210158-E30F-3E23-8721-3483AC7EC9D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{EEF09C85-737A-3743-B81B-5EE2C3638682}</UniqueIdentifier>
+      <UniqueIdentifier>{50CCBF29-7256-3B6F-B38D-C2E4B52EE858}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E5B9CAEA-5363-323C-8CB6-F5CDF040CBFD}</ProjectGuid>
+    <ProjectGuid>{30C73A8E-7697-3735-B190-36AAE11797BD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Proj\build\dep\glfw\examples\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">offscreen.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">offscreen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Proj\build\dep\glfw\examples\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">offscreen.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">offscreen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Proj\build\dep\glfw\examples\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">offscreen.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">offscreen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Proj\build\dep\glfw\examples\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">offscreen.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">offscreen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -106,10 +106,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,8 +122,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/Debug/offscreen.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/Debug/offscreen.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Proj/build/dep/glfw/examples/Debug/offscreen.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Proj/build/dep/glfw/examples/Debug/offscreen.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -132,7 +132,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -153,10 +153,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -169,8 +169,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/Release/offscreen.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/Release/offscreen.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Proj/build/dep/glfw/examples/Release/offscreen.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Proj/build/dep/glfw/examples/Release/offscreen.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -179,7 +179,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -200,10 +200,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -216,8 +216,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/MinSizeRel/offscreen.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/MinSizeRel/offscreen.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Proj/build/dep/glfw/examples/MinSizeRel/offscreen.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Proj/build/dep/glfw/examples/MinSizeRel/offscreen.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -226,7 +226,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -246,10 +246,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps;C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proj\GeomTP\dep\glfw\deps;D:\Proj\GeomTP\dep\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -262,8 +262,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/RelWithDebInfo/offscreen.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/RelWithDebInfo/offscreen.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Proj/build/dep/glfw/examples/RelWithDebInfo/offscreen.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Proj/build/dep/glfw/examples/RelWithDebInfo/offscreen.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -271,11 +271,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\examples\CMakeLists.txt">
+    <CustomBuild Include="D:\Proj\GeomTP\dep\glfw\examples\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -284,11 +284,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -297,11 +297,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -310,11 +310,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/cecil/Downloads/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Proj/GeomTP/dep/glfw/examples/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cecil/Downloads/Proj/GeomTP -BC:/Users/cecil/Downloads/Proj/build --check-stamp-file C:/Users/cecil/Downloads/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Proj/GeomTP -BD:/Proj/build --check-stamp-file D:/Proj/build/dep/glfw/examples/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -323,25 +323,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cecil\Downloads\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Proj\build\dep\glfw\examples\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\examples\offscreen.c" />
-    <ResourceCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\examples\glfw.rc" />
-    <ClInclude Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps\glad\gl.h" />
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\dep\glfw\deps\glad_gl.c" />
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\examples\offscreen.c" />
+    <ResourceCompile Include="D:\Proj\GeomTP\dep\glfw\examples\glfw.rc" />
+    <ClInclude Include="D:\Proj\GeomTP\dep\glfw\deps\glad\gl.h" />
+    <ClCompile Include="D:\Proj\GeomTP\dep\glfw\deps\glad_gl.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\ZERO_CHECK.vcxproj">
-      <Project>{09582A08-F49E-344D-B1A5-7E1623480726}</Project>
+    <ProjectReference Include="D:\Proj\build\ZERO_CHECK.vcxproj">
+      <Project>{C4AD00C4-DDDE-3C40-A36E-8BA498808E1F}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\cecil\Downloads\Proj\build\dep\glfw\src\glfw.vcxproj">
-      <Project>{2AEDDFB8-8DB8-37B2-B913-034BD5DC5F74}</Project>
+    <ProjectReference Include="D:\Proj\build\dep\glfw\src\glfw.vcxproj">
+      <Project>{AEC4C55F-87D9-342B-B2C0-17897EA5DA8C}</Project>
       <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>

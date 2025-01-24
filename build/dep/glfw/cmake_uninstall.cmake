@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/cecil/Downloads/Proj/build/dep/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/cecil/Downloads/Proj/build/dep/glfw/install_manifest.txt\"")
+if (NOT EXISTS "D:/Proj/build/dep/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"D:/Proj/build/dep/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/cecil/Downloads/Proj/build/dep/glfw/install_manifest.txt" files)
+file(READ "D:/Proj/build/dep/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

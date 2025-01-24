@@ -5,9 +5,11 @@ layout(location=1) in vec3 vNormal;    // The 2nd input attribute is the normal
 layout(location=2) in vec2 vTexCoord;  // The 3rd input attribute is the texture coordinates
 
 // for suggestive contours
-layout(location = 3) in vec2 curvature; // Curvature (κ1, κ2)
+layout(location = 3) in vec3 curvature; // Radial curvature
 layout(location = 4) in vec3 pDir1;     // Principal direction 1 (κ1 direction)
 layout(location = 5) in vec3 pDir2;     // Principal direction 2 (κ2 direction)
+layout(location = 6) in float kr;          // Radial curvature
+layout(location = 7) in vec3 gradKr;      // Gradient of radial curvature
 
 uniform mat4 modelMat, viewMat, projMat;  // Transformation matrices
 uniform mat3 normMat;                     // Normal matrix (to transform normals)
@@ -38,19 +40,9 @@ void main() {
     fTexCoord = vTexCoord;
 
     // sugg. contours
+    radCurvature = normalize(kr);
     vec3 w = normalize(fViewVector - dot(fViewVector, fNormal) * fNormal); // projection of the view vector onto the tangent plane of the surface
-    float cos2Phi = dot(w, pDir1) * dot(w, pDir1);
-    float sin2Phi = dot(w, pDir2) * dot(w, pDir2);
-    radCurvature = curvature.x * cos2Phi + curvature.y * sin2Phi; // κ_r
-
-    // Compute directional derivative Dwκ_r (using finite difference approximation)
-    float epsilon = 0.001; // Small offset
-    vec3 perturbedW = normalize(w + vec3(epsilon, 0.0, 0.0)); // Slightly offset direction
-    float cos2Phi_perturbed = dot(perturbedW, pDir1) * dot(perturbedW, pDir1);
-    float sin2Phi_perturbed = dot(perturbedW, pDir2) * dot(perturbedW, pDir2);
-    float radCurvature_perturbed = curvature.x * cos2Phi_perturbed + curvature.y * sin2Phi_perturbed;
-
-    dRadCurvature = (radCurvature_perturbed - radCurvature) / epsilon;
+    dRadCurvature = dot(gradKr, w);
 
     // Compute the final position of the vertex in clip space
     gl_Position = projMat * viewMat * modelMat * vec4(vPosition, 1.0);

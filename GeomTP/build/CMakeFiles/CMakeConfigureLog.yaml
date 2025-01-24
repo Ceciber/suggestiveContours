@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-      Compilazione avviata 22/01/2025 14:08:49.
+      Compilazione avviata 24/01/2025 01:51:04.
       
       Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:02.81
+      Tempo trascorso 00:00:01.15
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-      Compilazione avviata 22/01/2025 14:08:52.
+      Compilazione avviata 24/01/2025 01:51:06.
       
       Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:01.08
+      Tempo trascorso 00:00:01.09
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,48 +127,48 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-vfnypn"
-      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-vfnypn"
+      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-eaxeal"
+      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-eaxeal"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-vfnypn'
+        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-eaxeal'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0b035.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0aa6b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 22/01/2025 14:08:54.
+        Compilazione avviata 24/01/2025 01:51:08.
         
-        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vfnypn\\cmTC_0b035.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eaxeal\\cmTC_0aa6b.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_0b035.dir\\Debug\\".
+          Creazione directory "cmTC_0aa6b.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vfnypn\\Debug\\".
-          Creazione directory "cmTC_0b035.dir\\Debug\\cmTC_0b035.tlog\\".
+          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eaxeal\\Debug\\".
+          Creazione directory "cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_0b035.dir\\Debug\\cmTC_0b035.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_0b035.dir\\Debug\\cmTC_0b035.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0b035.dir\\Debug\\\\" /Fd"cmTC_0b035.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0aa6b.dir\\Debug\\\\" /Fd"cmTC_0aa6b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0b035.dir\\Debug\\\\" /Fd"cmTC_0b035.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0aa6b.dir\\Debug\\\\" /Fd"cmTC_0aa6b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vfnypn\\Debug\\cmTC_0b035.exe" /INCREMENTAL /ILK:"cmTC_0b035.dir\\Debug\\cmTC_0b035.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-vfnypn/Debug/cmTC_0b035.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-vfnypn/Debug/cmTC_0b035.lib" /MACHINE:X64  /machine:x64 cmTC_0b035.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_0b035.vcxproj -> D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vfnypn\\Debug\\cmTC_0b035.exe
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eaxeal\\Debug\\cmTC_0aa6b.exe" /INCREMENTAL /ILK:"cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-eaxeal/Debug/cmTC_0aa6b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-eaxeal/Debug/cmTC_0aa6b.lib" /MACHINE:X64  /machine:x64 cmTC_0aa6b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_0aa6b.vcxproj -> D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eaxeal\\Debug\\cmTC_0aa6b.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_0b035.dir\\Debug\\cmTC_0b035.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_0b035.dir\\Debug\\cmTC_0b035.tlog\\cmTC_0b035.lastbuildstate".
-        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vfnypn\\cmTC_0b035.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_0aa6b.dir\\Debug\\cmTC_0aa6b.tlog\\cmTC_0aa6b.lastbuildstate".
+        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eaxeal\\cmTC_0aa6b.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.07
+        Tempo trascorso 00:00:01.23
         
       exitCode: 0
   -
@@ -208,8 +208,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-bjm0n1"
-      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-bjm0n1"
+      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-ku0ts4"
+      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-ku0ts4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -217,40 +217,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-bjm0n1'
+        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-ku0ts4'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_db488.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1fcb8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 22/01/2025 14:08:56.
+        Compilazione avviata 24/01/2025 01:51:09.
         
-        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bjm0n1\\cmTC_db488.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ku0ts4\\cmTC_1fcb8.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_db488.dir\\Debug\\".
+          Creazione directory "cmTC_1fcb8.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bjm0n1\\Debug\\".
-          Creazione directory "cmTC_db488.dir\\Debug\\cmTC_db488.tlog\\".
+          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ku0ts4\\Debug\\".
+          Creazione directory "cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_db488.dir\\Debug\\cmTC_db488.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_db488.dir\\Debug\\cmTC_db488.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_db488.dir\\Debug\\\\" /Fd"cmTC_db488.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1fcb8.dir\\Debug\\\\" /Fd"cmTC_1fcb8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_db488.dir\\Debug\\\\" /Fd"cmTC_db488.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1fcb8.dir\\Debug\\\\" /Fd"cmTC_1fcb8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bjm0n1\\Debug\\cmTC_db488.exe" /INCREMENTAL /ILK:"cmTC_db488.dir\\Debug\\cmTC_db488.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-bjm0n1/Debug/cmTC_db488.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-bjm0n1/Debug/cmTC_db488.lib" /MACHINE:X64  /machine:x64 cmTC_db488.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_db488.vcxproj -> D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bjm0n1\\Debug\\cmTC_db488.exe
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ku0ts4\\Debug\\cmTC_1fcb8.exe" /INCREMENTAL /ILK:"cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-ku0ts4/Debug/cmTC_1fcb8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-ku0ts4/Debug/cmTC_1fcb8.lib" /MACHINE:X64  /machine:x64 cmTC_1fcb8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1fcb8.vcxproj -> D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ku0ts4\\Debug\\cmTC_1fcb8.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_db488.dir\\Debug\\cmTC_db488.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_db488.dir\\Debug\\cmTC_db488.tlog\\cmTC_db488.lastbuildstate".
-        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bjm0n1\\cmTC_db488.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_1fcb8.dir\\Debug\\cmTC_1fcb8.tlog\\cmTC_1fcb8.lastbuildstate".
+        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ku0ts4\\cmTC_1fcb8.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.05
+        Tempo trascorso 00:00:01.20
         
       exitCode: 0
   -
@@ -292,8 +292,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-tn79bk"
-      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-tn79bk"
+      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-hfcpkc"
+      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-hfcpkc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
@@ -301,40 +301,40 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-tn79bk'
+        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-hfcpkc'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b4895.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_71f5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 22/01/2025 14:08:57.
+        Compilazione avviata 24/01/2025 01:51:11.
         
-        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\cmTC_b4895.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\cmTC_71f5d.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_b4895.dir\\Debug\\".
+          Creazione directory "cmTC_71f5d.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\Debug\\".
-          Creazione directory "cmTC_b4895.dir\\Debug\\cmTC_b4895.tlog\\".
+          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\Debug\\".
+          Creazione directory "cmTC_71f5d.dir\\Debug\\cmTC_71f5d.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_b4895.dir\\Debug\\cmTC_b4895.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_b4895.dir\\Debug\\cmTC_b4895.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_71f5d.dir\\Debug\\cmTC_71f5d.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_71f5d.dir\\Debug\\cmTC_71f5d.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4895.dir\\Debug\\\\" /Fd"cmTC_b4895.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\src.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71f5d.dir\\Debug\\\\" /Fd"cmTC_71f5d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4895.dir\\Debug\\\\" /Fd"cmTC_b4895.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71f5d.dir\\Debug\\\\" /Fd"cmTC_71f5d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\src.c"
           src.c
-        D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\cmTC_b4895.vcxproj]
-        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\cmTC_b4895.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+        D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\cmTC_71f5d.vcxproj]
+        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\cmTC_71f5d.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\cmTC_b4895.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\cmTC_71f5d.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: ClCompile) -> 
-          D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tn79bk\\cmTC_b4895.vcxproj]
+          D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfcpkc\\cmTC_71f5d.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.76
+        Tempo trascorso 00:00:00.61
         
       exitCode: 1
   -
@@ -347,8 +347,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-szpinb"
-      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-szpinb"
+      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-jtgg2h"
+      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-jtgg2h"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
@@ -356,42 +356,42 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-szpinb'
+        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-jtgg2h'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f9b88.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_79ac1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 22/01/2025 14:08:58.
+        Compilazione avviata 24/01/2025 01:51:12.
         
-        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\cmTC_f9b88.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\cmTC_79ac1.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_f9b88.dir\\Debug\\".
+          Creazione directory "cmTC_79ac1.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\Debug\\".
-          Creazione directory "cmTC_f9b88.dir\\Debug\\cmTC_f9b88.tlog\\".
+          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\Debug\\".
+          Creazione directory "cmTC_79ac1.dir\\Debug\\cmTC_79ac1.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_f9b88.dir\\Debug\\cmTC_f9b88.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_f9b88.dir\\Debug\\cmTC_f9b88.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_79ac1.dir\\Debug\\cmTC_79ac1.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_79ac1.dir\\Debug\\cmTC_79ac1.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9b88.dir\\Debug\\\\" /Fd"cmTC_f9b88.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\CheckFunctionExists.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79ac1.dir\\Debug\\\\" /Fd"cmTC_79ac1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9b88.dir\\Debug\\\\" /Fd"cmTC_f9b88.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79ac1.dir\\Debug\\\\" /Fd"cmTC_79ac1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\Debug\\cmTC_f9b88.exe" /INCREMENTAL /ILK:"cmTC_f9b88.dir\\Debug\\cmTC_f9b88.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-szpinb/Debug/cmTC_f9b88.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-szpinb/Debug/cmTC_f9b88.lib" /MACHINE:X64  /machine:x64 cmTC_f9b88.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\cmTC_f9b88.vcxproj]
-        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\cmTC_f9b88.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\Debug\\cmTC_79ac1.exe" /INCREMENTAL /ILK:"cmTC_79ac1.dir\\Debug\\cmTC_79ac1.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-jtgg2h/Debug/cmTC_79ac1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-jtgg2h/Debug/cmTC_79ac1.lib" /MACHINE:X64  /machine:x64 cmTC_79ac1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\cmTC_79ac1.vcxproj]
+        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\cmTC_79ac1.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\cmTC_f9b88.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\cmTC_79ac1.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: Link) -> 
-          LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-szpinb\\cmTC_f9b88.vcxproj]
+          LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jtgg2h\\cmTC_79ac1.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.78
+        Tempo trascorso 00:00:00.84
         
       exitCode: 1
   -
@@ -404,8 +404,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-6cfan2"
-      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-6cfan2"
+      source: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-po0rwe"
+      binary: "D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-po0rwe"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
@@ -413,42 +413,42 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-6cfan2'
+        Change Dir: 'D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-po0rwe'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_44bcc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_54b58.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 22/01/2025 14:08:59.
+        Compilazione avviata 24/01/2025 01:51:13.
         
-        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\cmTC_44bcc.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\cmTC_54b58.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_44bcc.dir\\Debug\\".
+          Creazione directory "cmTC_54b58.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\Debug\\".
-          Creazione directory "cmTC_44bcc.dir\\Debug\\cmTC_44bcc.tlog\\".
+          Creazione directory "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\Debug\\".
+          Creazione directory "cmTC_54b58.dir\\Debug\\cmTC_54b58.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_44bcc.dir\\Debug\\cmTC_44bcc.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_44bcc.dir\\Debug\\cmTC_44bcc.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_54b58.dir\\Debug\\cmTC_54b58.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_54b58.dir\\Debug\\cmTC_54b58.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44bcc.dir\\Debug\\\\" /Fd"cmTC_44bcc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\CheckFunctionExists.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_54b58.dir\\Debug\\\\" /Fd"cmTC_54b58.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44bcc.dir\\Debug\\\\" /Fd"cmTC_44bcc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_54b58.dir\\Debug\\\\" /Fd"cmTC_54b58.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\Debug\\cmTC_44bcc.exe" /INCREMENTAL /ILK:"cmTC_44bcc.dir\\Debug\\cmTC_44bcc.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-6cfan2/Debug/cmTC_44bcc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-6cfan2/Debug/cmTC_44bcc.lib" /MACHINE:X64  /machine:x64 cmTC_44bcc.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\cmTC_44bcc.vcxproj]
-        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\cmTC_44bcc.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\Debug\\cmTC_54b58.exe" /INCREMENTAL /ILK:"cmTC_54b58.dir\\Debug\\cmTC_54b58.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-po0rwe/Debug/cmTC_54b58.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/GeomTP/build/CMakeFiles/CMakeScratch/TryCompile-po0rwe/Debug/cmTC_54b58.lib" /MACHINE:X64  /machine:x64 cmTC_54b58.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\cmTC_54b58.vcxproj]
+        Compilazione progetto "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\cmTC_54b58.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\cmTC_44bcc.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\cmTC_54b58.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: Link) -> 
-          LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cfan2\\cmTC_44bcc.vcxproj]
+          LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\GeomTP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po0rwe\\cmTC_54b58.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.81
+        Tempo trascorso 00:00:00.86
         
       exitCode: 1
 ...

@@ -19,10 +19,11 @@ void main() {
         fragColor = vec4(0.0, 0.0, 0.0, 1.0); // Black
     }
     // Visualizing curvature: use radial curvature to create color gradients
-    else if (abs(radCurvature) < 0.1 && dRadCurvature > 0.0) {
+    else if (abs(radCurvature) < 0.2 && dRadCurvature > 0.0) {
         fragColor = vec4(1.0, 0.0, 0.0, 1.0);  // Red
     } 
     else {
         fragColor = vec4(0.7, 0.7, 0.7, 0.7);
     }  
+
 }

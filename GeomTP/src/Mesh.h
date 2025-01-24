@@ -15,6 +15,10 @@
 
 #include <cmath>
 
+#include <igl/principal_curvature.h>
+#include <igl/grad.h>
+#include <Eigen/Geometry>
+
 class Mesh {
 public:
   virtual ~Mesh();
@@ -31,6 +35,8 @@ public:
   const std::vector<glm::uvec3> &triangleIndices() const { return _triangleIndices; }
   std::vector<glm::uvec3> &triangleIndices() { return _triangleIndices; }
 
+  void setCameraPosition(const glm::vec3 &position) {cameraPosition = position;}
+
   /// Compute the parameters of a sphere which bounds the mesh
   void computeBoundingSphere(glm::vec3 &center, float &radius) const;
 
@@ -44,7 +50,7 @@ public:
 
   void addPlan(float square_half_side = 1.0f);
 
-    void subdivideLoop() {
+  void subdivideLoop() {
     std::vector<glm::vec3> newVertices( _vertexPositions.size() , glm::vec3(0,0,0) );
     std::vector<glm::uvec3> newTriangles;
 
@@ -222,89 +228,135 @@ public:
     recomputePerVertexTextureCoordinates( );
   }
 
+  // compute curvatures and principal directions for each vertex
+  void computeVertexCurvatures() {
+    // Convert _vertexPositions and _triangleIndices into Eigen matrices
+    Eigen::MatrixXd V(_vertexPositions.size(), 3); // Vertices matrix
+    Eigen::MatrixXi F(_triangleIndices.size(), 3); // Faces matrix
 
-  void Mesh::computeVertexCurvatures() {
-    // Clear previous results
-    _vertexCurvatures.resize(_vertexPositions.size(), glm::vec2(0.0f));
-    _principalDir1.resize(_vertexPositions.size(), glm::vec3(0.0f));
-    _principalDir2.resize(_vertexPositions.size(), glm::vec3(0.0f));
-
-    // Step 1: Initialize containers for curvature tensors
-    std::vector<glm::mat2x2> curvatureTensors(_vertexPositions.size(), glm::mat2x2(0.0f));
-    std::vector<float> vertexWeights(_vertexPositions.size(), 0.0f); // For weighted averaging
-
-    // Step 2: Iterate over all triangles
-    for (const auto& tri : _triangleIndices) {
-        // Get the positions and normals of the triangle vertices
-        glm::vec3 v0 = _vertexPositions[tri.x];
-        glm::vec3 v1 = _vertexPositions[tri.y];
-        glm::vec3 v2 = _vertexPositions[tri.z];
-
-        glm::vec3 n0 = _vertexNormals[tri.x];
-        glm::vec3 n1 = _vertexNormals[tri.y];
-        glm::vec3 n2 = _vertexNormals[tri.z];
-
-        // Edges of the triangle
-        glm::vec3 e0 = v1 - v0;
-        glm::vec3 e1 = v2 - v1;
-        glm::vec3 e2 = v0 - v2;
-
-        // Differences in normals along edges
-        glm::vec3 dn0 = n1 - n0;
-        glm::vec3 dn1 = n2 - n1;
-        glm::vec3 dn2 = n0 - n2;
-
-        // Approximate curvature tensor for each vertex of the triangle
-        auto computeTensor = [](const glm::vec3& e, const glm::vec3& dn) -> glm::mat2x2 {
-            float lenSq = glm::dot(e, e);
-            if (lenSq == 0.0f) return glm::mat2x2(0.0f); // Avoid division by zero
-            glm::vec2 projE = glm::vec2(glm::dot(e, glm::vec3(1, 0, 0)), glm::dot(e, glm::vec3(0, 1, 0)));
-            glm::vec2 projDn = glm::vec2(glm::dot(dn, glm::vec3(1, 0, 0)), glm::dot(dn, glm::vec3(0, 1, 0)));
-            return glm::outerProduct(projDn / lenSq, projE);
-        };
-
-        glm::mat2x2 t0 = computeTensor(e0, dn0);
-        glm::mat2x2 t1 = computeTensor(e1, dn1);
-        glm::mat2x2 t2 = computeTensor(e2, dn2);
-
-        // Step 3: Aggregate tensors for each vertex
-        curvatureTensors[tri.x] += t0;
-        curvatureTensors[tri.y] += t1;
-        curvatureTensors[tri.z] += t2;
-
-        // Use triangle area as weight
-        float area = 0.5f * glm::length(glm::cross(e0, e2));
-        vertexWeights[tri.x] += area;
-        vertexWeights[tri.y] += area;
-        vertexWeights[tri.z] += area;
+    for (size_t i = 0; i < _vertexPositions.size(); ++i) {
+      V(i, 0) = _vertexPositions[i].x;
+      V(i, 1) = _vertexPositions[i].y;
+      V(i, 2) = _vertexPositions[i].z;
     }
 
-    // Step 4: Normalize tensors and compute eigenvalues/vectors
+    for (size_t i = 0; i < _triangleIndices.size(); ++i) {
+      F(i, 0) = _triangleIndices[i].x;
+      F(i, 1) = _triangleIndices[i].y;
+      F(i, 2) = _triangleIndices[i].z;
+    }
+
+    // Matrices to store the principal curvatures and directions
+    Eigen::MatrixXd PD1, PD2; // Principal directions
+    Eigen::VectorXd PV1, PV2; // Principal curvatures
+
+    // Compute the principal curvatures and directions using libigl
+    igl::principal_curvature(V, F, PD1, PD2, PV1, PV2);
+
+    // Resize member variables to store the results
+    _vertexCurvatures.resize(_vertexPositions.size());
+    _principalDir1.resize(_vertexPositions.size());
+    _principalDir2.resize(_vertexPositions.size());
+
+    // Store the results in the member variables
     for (size_t i = 0; i < _vertexPositions.size(); ++i) {
-        if (vertexWeights[i] > 0.0f) {
-            curvatureTensors[i] /= vertexWeights[i]; // Average tensor
-        }
-
-        // Perform eigen decomposition to get principal curvatures and directions
-        glm::mat2x2& tensor = curvatureTensors[i];
-        glm::vec2 eigenvalues;
-        glm::mat2 eigenvectors;
-
-        computeEigenDecomposition(tensor, eigenvalues, eigenvectors);
-
-        _vertexCurvatures[i] = eigenvalues; // Principal curvatures (κ1, κ2)
-
-        // Map principal directions back to 3D (assuming eigenvectors are in tangent plane)
-        glm::vec3 tangentX = glm::normalize(glm::cross(_vertexNormals[i], glm::vec3(1, 0, 0)));
-        if (glm::length(tangentX) < 1e-6f) {
-            tangentX = glm::normalize(glm::cross(_vertexNormals[i], glm::vec3(0, 1, 0)));
-        }
-        glm::vec3 tangentY = glm::normalize(glm::cross(_vertexNormals[i], tangentX));
-
-        _principalDir1[i] = tangentX * eigenvectors[0][0] + tangentY * eigenvectors[1][0];
-        _principalDir2[i] = tangentX * eigenvectors[0][1] + tangentY * eigenvectors[1][1];
+      _vertexCurvatures[i] = glm::vec2(PV1[i], PV2[i]); // Store κ1, κ2
+      _principalDir1[i] = glm::vec3(PD1(i, 0), PD1(i, 1), PD1(i, 2)); // Store direction of κ1
+      _principalDir2[i] = glm::vec3(PD2(i, 0), PD2(i, 1), PD2(i, 2)); // Store direction of κ2
     }
   }
+
+  //implementation of the object-space algorithm
+
+  // Compute radial curvature κr for each vertex
+  void computeVertexRadialCurvature() {
+    _vertexRadialCurvatures.resize(_vertexPositions.size());
+
+    std::cout << "Camera Position: (" 
+              << cameraPosition.x << ", " 
+              << cameraPosition.y << ", " 
+              << cameraPosition.z << ")" << std::endl;
+
+    for (size_t i = 0; i < _vertexPositions.size(); ++i) {
+      // Compute view direction (camera to vertex)
+      glm::vec3 viewDir = glm::normalize(cameraPosition - _vertexPositions[i]);
+
+      // Compute the radial curvature κr = κ1 * (viewDir · PD1)^2 + κ2 * (viewDir · PD2)^2
+      float dotPD1 = glm::dot(viewDir, _principalDir1[i]);
+      float dotPD2 = glm::dot(viewDir, _principalDir2[i]);
+      float kappa1 = _vertexCurvatures[i].x; // κ1
+      float kappa2 = _vertexCurvatures[i].y; // κ2
+
+      _vertexRadialCurvatures[i] = kappa1 * dotPD1 * dotPD1 + kappa2 * dotPD2 * dotPD2;
+
+      /*std::cout << "Vertex " << i << ": kr = " << _vertexRadialCurvatures[i] 
+              << ", viewDir = (" << viewDir.x << ", " << viewDir.y << ", " << viewDir.z << ")"
+              << ", PD1 = (" << _principalDir1[i].x << ", " << _principalDir1[i].y << ", " << _principalDir1[i].z << ")"
+              << ", PD2 = (" << _principalDir2[i].x << ", " << _principalDir2[i].y << ", " << _principalDir2[i].z << ")" << std::endl; */
+    }
+  }
+
+  // Compute gradient of radial curvature ∇κr for each vertex
+  void Mesh::computeGradientOfRadialCurvature() {
+    // Ensure radial curvatures are computed
+    if (_vertexRadialCurvatures.empty()) {
+      std::cerr << "Radial curvatures not computed yet." << std::endl;
+      return;
+    }
+
+    // Convert vertex positions to Eigen matrix
+    Eigen::MatrixXd V(_vertexPositions.size(), 3);
+    for (size_t i = 0; i < _vertexPositions.size(); ++i) {
+      V(i, 0) = _vertexPositions[i].x;
+      V(i, 1) = _vertexPositions[i].y;
+      V(i, 2) = _vertexPositions[i].z;
+    }
+
+    // Convert triangle indices to Eigen matrix
+    Eigen::MatrixXi F(_triangleIndices.size(), 3);
+    for (size_t i = 0; i < _triangleIndices.size(); ++i) {
+      F(i, 0) = _triangleIndices[i].x;
+      F(i, 1) = _triangleIndices[i].y;
+      F(i, 2) = _triangleIndices[i].z;
+    }
+
+    // Convert radial curvatures to Eigen vector
+    Eigen::VectorXd radialCurvature(_vertexRadialCurvatures.size());
+    for (size_t i = 0; i < _vertexRadialCurvatures.size(); ++i) {
+      radialCurvature(i) = _vertexRadialCurvatures[i];
+    }
+
+    // Compute the gradient operator
+    Eigen::SparseMatrix<double> G;
+    igl::grad(V, F, G);
+
+    std::cout << "G rows: " << G.rows() << ", G cols: " << G.cols() << std::endl;
+    std::cout << "G non-zeros: " << G.nonZeros() << std::endl;
+
+    // Compute the gradient of radial curvature
+    Eigen::MatrixXd gradKappaR = G * radialCurvature;
+
+    std::cout << "gradKappaR rows: " << gradKappaR.rows() << ", cols: " << gradKappaR.cols() << std::endl;
+
+    // Resize _vertexGradKappaR to match the number of rows in gradKappaR
+    _vertexGradKappaR.resize(F.rows());
+
+    for (int i = 0; i < F.rows(); ++i) {
+        // Each triangle corresponds to three consecutive rows in gradKappaR
+        _vertexGradKappaR[i] = glm::vec3(
+            gradKappaR(3 * i + 0, 0), // x-component
+            gradKappaR(3 * i + 1, 0), // y-component
+            gradKappaR(3 * i + 2, 0)  // z-component
+        );
+
+        /*std::cout << "Triangle " << i << " - Gradient of Radial Curvature: "
+                << "(" << _vertexGradKappaR[i].x << ", "
+                << _vertexGradKappaR[i].y << ", "
+                << _vertexGradKappaR[i].z << ")" << std::endl; */
+    }
+
+  }
+
 
 private:
   std::vector<glm::vec3> _vertexPositions;
@@ -317,6 +369,10 @@ private:
   std::vector<glm::vec3> _principalDir1;    // Direction of κ1 at each vertex
   std::vector<glm::vec3> _principalDir2;    // Direction of κ2 at each vertex
 
+  std::vector<float> _vertexRadialCurvatures; // Radial curvature κr
+  std::vector<glm::vec3> _vertexGradKappaR;  // Gradient of radial curvature
+
+  glm::vec3 cameraPosition; //camera position
 
   GLuint _vao = 0;
   GLuint _posVbo = 0;
@@ -327,42 +383,8 @@ private:
   GLuint _curvatureVbo = 0;
   GLuint _pDir1Vbo = 0;
   GLuint _pDir2Vbo = 0;
-
-  void computeEigenDecomposition(const glm::mat2x2 &matrix, glm::vec2 &eigenvalues, glm::mat2x2 &eigenvectors) {
-    // Ensure the input matrix is symmetric
-    float a = matrix[0][0];
-    float b = matrix[0][1];
-    float c = matrix[1][0];
-    float d = matrix[1][1];
-
-    // Compute eigenvalues using the quadratic formula
-    float trace = a + d; // Trace of the matrix
-    float determinant = a * d - b * c; // Determinant of the matrix
-
-    float discriminant = std::sqrt(trace * trace / 4.0f - determinant);
-
-    eigenvalues[0] = trace / 2.0f + discriminant; // Larger eigenvalue
-    eigenvalues[1] = trace / 2.0f - discriminant; // Smaller eigenvalue
-
-    // Compute eigenvectors for the eigenvalues
-    for (int i = 0; i < 2; ++i) {
-        float lambda = eigenvalues[i];
-        glm::vec2 eigvec;
-
-        // Solve (A - λI)v = 0
-        if (std::abs(b) > 1e-6) { // Handle general case
-            eigvec = glm::normalize(glm::vec2(b, lambda - a));
-        } else if (std::abs(a - lambda) > 1e-6) { // Handle diagonal dominance case
-            eigvec = glm::normalize(glm::vec2(lambda - d, c));
-        } else { // Handle near-degenerate case
-            eigvec = glm::vec2(1.0f, 0.0f); // Arbitrary choice for numerical stability
-        }
-
-        // Store the eigenvector in the output matrix
-        eigenvectors[0][i] = eigvec[0];
-        eigenvectors[1][i] = eigvec[1];
-    }
-  }
+  GLuint _radCurvatureVbo = 0;
+  GLuint _gradKappaRVbo = 0;
 
 };
 

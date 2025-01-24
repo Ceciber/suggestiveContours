@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\src\main.cpp">
+    <ClCompile Include="D:\Proj\GeomTP\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\src\Mesh.cpp">
+    <ClCompile Include="D:\Proj\GeomTP\src\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\cecil\Downloads\Proj\GeomTP\src\ShaderProgram.cpp">
+    <ClCompile Include="D:\Proj\GeomTP\src\ShaderProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\cecil\Downloads\Proj\GeomTP\CMakeLists.txt" />
+    <CustomBuild Include="D:\Proj\GeomTP\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{EEF09C85-737A-3743-B81B-5EE2C3638682}</UniqueIdentifier>
+      <UniqueIdentifier>{50CCBF29-7256-3B6F-B38D-C2E4B52EE858}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
