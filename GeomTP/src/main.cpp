@@ -364,12 +364,15 @@ void cursorPosCallback(GLFWwindow *window, double xpos, double ypos)
     const glm::vec3 dRot(-dy*M_PI, dx*M_PI, 0.0);
     g_cam->setRotation(g_baseRot + dRot);
     cameraPosition = g_cam->getPosition();
+    g_scene.rhino->setCameraPosition(cameraPosition);
   } else if(g_panningP) {
     g_cam->setPosition(g_baseTrans + g_meshScale*glm::vec3(dx, dy, 0.0));
     cameraPosition = g_cam->getPosition();
+    g_scene.rhino->setCameraPosition(cameraPosition);
   } else if(g_zoomingP) {
     g_cam->setPosition(g_baseTrans + g_meshScale*glm::vec3(0.0, 0.0, dy));
     cameraPosition = g_cam->getPosition();
+    g_scene.rhino->setCameraPosition(cameraPosition);
   }
 }
 
@@ -382,6 +385,7 @@ void mouseButtonCallback(GLFWwindow *window, int button, int action, int mods)
       glfwGetCursorPos(window, &g_baseX, &g_baseY);
       g_baseRot = g_cam->getRotation();
       cameraPosition = g_cam->getPosition();
+      g_scene.rhino->setCameraPosition(cameraPosition);
     }
   } else if(button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE) {
     g_rotatingP = false;
@@ -391,6 +395,7 @@ void mouseButtonCallback(GLFWwindow *window, int button, int action, int mods)
       glfwGetCursorPos(window, &g_baseX, &g_baseY);
       g_baseTrans = g_cam->getPosition();
       cameraPosition = g_cam->getPosition();
+      g_scene.rhino->setCameraPosition(cameraPosition);
     }
   } else if(button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_RELEASE) {
     g_panningP = false;
@@ -399,6 +404,7 @@ void mouseButtonCallback(GLFWwindow *window, int button, int action, int mods)
       g_zoomingP = true;
       glfwGetCursorPos(window, &g_baseX, &g_baseY);
       g_baseTrans = g_cam->getPosition();
+      g_scene.rhino->setCameraPosition(cameraPosition);
     }
   } else if(button == GLFW_MOUSE_BUTTON_MIDDLE && action == GLFW_RELEASE) {
     g_zoomingP = false;
