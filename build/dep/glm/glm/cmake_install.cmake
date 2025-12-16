@@ -1,8 +1,8 @@
-# Install script for directory: D:/Proj/GeomTP/dep/glm/glm
+# Install script for directory: D:/suggestive_contours/dep/glm/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/tpSubdiv")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/tpSubdiv")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

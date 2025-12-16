@@ -24,9 +24,9 @@ events:
       The output was:
       0
       Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-      Compilazione avviata 23/01/2025 23:25:46.
+      Compilazione avviata 16/02/2025 01:59:42.
       
-      Progetto "D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" sul nodo 1 (destinazioni predefinite).
+      Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
         Creazione directory "Debug\\".
         L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
@@ -39,7 +39,7 @@ events:
         CMakeCCompilerId.c
       Link:
         D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -47,13 +47,13 @@ events:
       FinalizeBuildStatus:
         Eliminazione del file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" in corso.
         Aggiornamento timestamp di "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" (destinazioni predefinite) completata.
+      Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdC\\CompilerIdC.vcxproj" (destinazioni predefinite) completata.
       
       Compilazione completata.
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:01.01
+      Tempo trascorso 00:00:01.12
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -61,7 +61,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        D:/Proj/build/CMakeFiles/3.30.4/CompilerIdC/CompilerIdC.exe
+        D:/suggestive_contours/build/CMakeFiles/3.30.4/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -79,9 +79,9 @@ events:
       The output was:
       0
       Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-      Compilazione avviata 23/01/2025 23:25:48.
+      Compilazione avviata 16/02/2025 01:59:43.
       
-      Progetto "D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sul nodo 1 (destinazioni predefinite).
+      Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
         Creazione directory "Debug\\".
         L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
@@ -94,7 +94,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -102,13 +102,13 @@ events:
       FinalizeBuildStatus:
         Eliminazione del file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" in corso.
         Aggiornamento timestamp di "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinazioni predefinite) completata.
+      Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\3.30.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinazioni predefinite) completata.
       
       Compilazione completata.
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:00.96
+      Tempo trascorso 00:00:00.93
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -116,7 +116,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/Proj/build/CMakeFiles/3.30.4/CompilerIdCXX/CompilerIdCXX.exe
+        D:/suggestive_contours/build/CMakeFiles/3.30.4/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -127,48 +127,48 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-lc7rzs"
-      binary: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-lc7rzs"
+      source: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-0s6s7x"
+      binary: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-0s6s7x"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-lc7rzs'
+        Change Dir: 'D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-0s6s7x'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c7a28.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fd35b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 23/01/2025 23:25:49.
+        Compilazione avviata 16/02/2025 01:59:45.
         
-        Progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc7rzs\\cmTC_c7a28.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0s6s7x\\cmTC_fd35b.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_c7a28.dir\\Debug\\".
+          Creazione directory "cmTC_fd35b.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc7rzs\\Debug\\".
-          Creazione directory "cmTC_c7a28.dir\\Debug\\cmTC_c7a28.tlog\\".
+          Creazione directory "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0s6s7x\\Debug\\".
+          Creazione directory "cmTC_fd35b.dir\\Debug\\cmTC_fd35b.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_c7a28.dir\\Debug\\cmTC_c7a28.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_c7a28.dir\\Debug\\cmTC_c7a28.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_fd35b.dir\\Debug\\cmTC_fd35b.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_fd35b.dir\\Debug\\cmTC_fd35b.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c7a28.dir\\Debug\\\\" /Fd"cmTC_c7a28.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fd35b.dir\\Debug\\\\" /Fd"cmTC_fd35b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c7a28.dir\\Debug\\\\" /Fd"cmTC_c7a28.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fd35b.dir\\Debug\\\\" /Fd"cmTC_fd35b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc7rzs\\Debug\\cmTC_c7a28.exe" /INCREMENTAL /ILK:"cmTC_c7a28.dir\\Debug\\cmTC_c7a28.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-lc7rzs/Debug/cmTC_c7a28.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-lc7rzs/Debug/cmTC_c7a28.lib" /MACHINE:X64  /machine:x64 cmTC_c7a28.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c7a28.vcxproj -> D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc7rzs\\Debug\\cmTC_c7a28.exe
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0s6s7x\\Debug\\cmTC_fd35b.exe" /INCREMENTAL /ILK:"cmTC_fd35b.dir\\Debug\\cmTC_fd35b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-0s6s7x/Debug/cmTC_fd35b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-0s6s7x/Debug/cmTC_fd35b.lib" /MACHINE:X64  /machine:x64 cmTC_fd35b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_fd35b.vcxproj -> D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0s6s7x\\Debug\\cmTC_fd35b.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_c7a28.dir\\Debug\\cmTC_c7a28.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_c7a28.dir\\Debug\\cmTC_c7a28.tlog\\cmTC_c7a28.lastbuildstate".
-        Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lc7rzs\\cmTC_c7a28.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_fd35b.dir\\Debug\\cmTC_fd35b.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_fd35b.dir\\Debug\\cmTC_fd35b.tlog\\cmTC_fd35b.lastbuildstate".
+        Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0s6s7x\\cmTC_fd35b.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.01
+        Tempo trascorso 00:00:01.03
         
       exitCode: 0
   -
@@ -208,8 +208,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-t72l48"
-      binary: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-t72l48"
+      source: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-8uc9ai"
+      binary: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-8uc9ai"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -217,40 +217,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-t72l48'
+        Change Dir: 'D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-8uc9ai'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_53b19.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_014be.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 23/01/2025 23:25:50.
+        Compilazione avviata 16/02/2025 01:59:47.
         
-        Progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t72l48\\cmTC_53b19.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8uc9ai\\cmTC_014be.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_53b19.dir\\Debug\\".
+          Creazione directory "cmTC_014be.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t72l48\\Debug\\".
-          Creazione directory "cmTC_53b19.dir\\Debug\\cmTC_53b19.tlog\\".
+          Creazione directory "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8uc9ai\\Debug\\".
+          Creazione directory "cmTC_014be.dir\\Debug\\cmTC_014be.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_53b19.dir\\Debug\\cmTC_53b19.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_53b19.dir\\Debug\\cmTC_53b19.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_014be.dir\\Debug\\cmTC_014be.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_014be.dir\\Debug\\cmTC_014be.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_53b19.dir\\Debug\\\\" /Fd"cmTC_53b19.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_014be.dir\\Debug\\\\" /Fd"cmTC_014be.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_53b19.dir\\Debug\\\\" /Fd"cmTC_53b19.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_014be.dir\\Debug\\\\" /Fd"cmTC_014be.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t72l48\\Debug\\cmTC_53b19.exe" /INCREMENTAL /ILK:"cmTC_53b19.dir\\Debug\\cmTC_53b19.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-t72l48/Debug/cmTC_53b19.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-t72l48/Debug/cmTC_53b19.lib" /MACHINE:X64  /machine:x64 cmTC_53b19.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_53b19.vcxproj -> D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t72l48\\Debug\\cmTC_53b19.exe
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8uc9ai\\Debug\\cmTC_014be.exe" /INCREMENTAL /ILK:"cmTC_014be.dir\\Debug\\cmTC_014be.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-8uc9ai/Debug/cmTC_014be.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-8uc9ai/Debug/cmTC_014be.lib" /MACHINE:X64  /machine:x64 cmTC_014be.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_014be.vcxproj -> D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8uc9ai\\Debug\\cmTC_014be.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_53b19.dir\\Debug\\cmTC_53b19.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_53b19.dir\\Debug\\cmTC_53b19.tlog\\cmTC_53b19.lastbuildstate".
-        Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t72l48\\cmTC_53b19.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_014be.dir\\Debug\\cmTC_014be.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_014be.dir\\Debug\\cmTC_014be.tlog\\cmTC_014be.lastbuildstate".
+        Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8uc9ai\\cmTC_014be.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.08
+        Tempo trascorso 00:00:01.01
         
       exitCode: 0
   -
@@ -292,50 +292,49 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-bo1ipf"
-      binary: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-bo1ipf"
+      source: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-o1zskr"
+      binary: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-o1zskr"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/suggestive_contours/dep/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-bo1ipf'
+        Change Dir: 'D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-o1zskr'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_839fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_81c03.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 23/01/2025 23:25:52.
+        Compilazione avviata 16/02/2025 01:59:48.
         
-        Progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\cmTC_839fb.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\cmTC_81c03.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_839fb.dir\\Debug\\".
+          Creazione directory "cmTC_81c03.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\Debug\\".
-          Creazione directory "cmTC_839fb.dir\\Debug\\cmTC_839fb.tlog\\".
+          Creazione directory "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\Debug\\".
+          Creazione directory "cmTC_81c03.dir\\Debug\\cmTC_81c03.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_839fb.dir\\Debug\\cmTC_839fb.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_839fb.dir\\Debug\\cmTC_839fb.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_81c03.dir\\Debug\\cmTC_81c03.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_81c03.dir\\Debug\\cmTC_81c03.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_839fb.dir\\Debug\\\\" /Fd"cmTC_839fb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81c03.dir\\Debug\\\\" /Fd"cmTC_81c03.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_839fb.dir\\Debug\\\\" /Fd"cmTC_839fb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81c03.dir\\Debug\\\\" /Fd"cmTC_81c03.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\src.c"
           src.c
-        D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\cmTC_839fb.vcxproj]
-        Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\cmTC_839fb.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+        D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\cmTC_81c03.vcxproj]
+        Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\cmTC_81c03.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\cmTC_839fb.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\cmTC_81c03.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: ClCompile) -> 
-          D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bo1ipf\\cmTC_839fb.vcxproj]
+          D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\src.c(1,10): error C1083: Non ├¿ possibile aprire il file inclusione: 'pthread.h': No such file or directory [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o1zskr\\cmTC_81c03.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.56
+        Tempo trascorso 00:00:00.57
         
       exitCode: 1
   -
@@ -348,51 +347,51 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-06feq2"
-      binary: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-06feq2"
+      source: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-08nxr6"
+      binary: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-08nxr6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/suggestive_contours/dep/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-06feq2'
+        Change Dir: 'D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-08nxr6'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ff666.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_02e71.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 23/01/2025 23:25:53.
+        Compilazione avviata 16/02/2025 01:59:49.
         
-        Progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\cmTC_ff666.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\cmTC_02e71.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_ff666.dir\\Debug\\".
+          Creazione directory "cmTC_02e71.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\Debug\\".
-          Creazione directory "cmTC_ff666.dir\\Debug\\cmTC_ff666.tlog\\".
+          Creazione directory "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\Debug\\".
+          Creazione directory "cmTC_02e71.dir\\Debug\\cmTC_02e71.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_ff666.dir\\Debug\\cmTC_ff666.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_ff666.dir\\Debug\\cmTC_ff666.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_02e71.dir\\Debug\\cmTC_02e71.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_02e71.dir\\Debug\\cmTC_02e71.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ff666.dir\\Debug\\\\" /Fd"cmTC_ff666.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\CheckFunctionExists.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02e71.dir\\Debug\\\\" /Fd"cmTC_02e71.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ff666.dir\\Debug\\\\" /Fd"cmTC_ff666.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02e71.dir\\Debug\\\\" /Fd"cmTC_02e71.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\Debug\\cmTC_ff666.exe" /INCREMENTAL /ILK:"cmTC_ff666.dir\\Debug\\cmTC_ff666.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-06feq2/Debug/cmTC_ff666.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-06feq2/Debug/cmTC_ff666.lib" /MACHINE:X64  /machine:x64 cmTC_ff666.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\cmTC_ff666.vcxproj]
-        Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\cmTC_ff666.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\Debug\\cmTC_02e71.exe" /INCREMENTAL /ILK:"cmTC_02e71.dir\\Debug\\cmTC_02e71.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-08nxr6/Debug/cmTC_02e71.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-08nxr6/Debug/cmTC_02e71.lib" /MACHINE:X64  /machine:x64 cmTC_02e71.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\cmTC_02e71.vcxproj]
+        Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\cmTC_02e71.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\cmTC_ff666.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\cmTC_02e71.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: Link) -> 
-          LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06feq2\\cmTC_ff666.vcxproj]
+          LINK : fatal error LNK1104: impossibile aprire il file 'pthreads.lib' [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-08nxr6\\cmTC_02e71.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.76
+        Tempo trascorso 00:00:00.78
         
       exitCode: 1
   -
@@ -405,51 +404,51 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-pydu5g"
-      binary: "D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-pydu5g"
+      source: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-450kbc"
+      binary: "D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-450kbc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_MODULE_PATH: "D:/Proj/GeomTP/dep/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/suggestive_contours/dep/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-pydu5g'
+        Change Dir: 'D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-450kbc'
         
-        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_19b55.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c207d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.11.9+a69bbaaf5 per .NET Framework
-        Compilazione avviata 23/01/2025 23:25:54.
+        Compilazione avviata 16/02/2025 01:59:50.
         
-        Progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\cmTC_19b55.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\cmTC_c207d.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_19b55.dir\\Debug\\".
+          Creazione directory "cmTC_c207d.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\Debug\\".
-          Creazione directory "cmTC_19b55.dir\\Debug\\cmTC_19b55.tlog\\".
+          Creazione directory "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\Debug\\".
+          Creazione directory "cmTC_c207d.dir\\Debug\\cmTC_c207d.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_19b55.dir\\Debug\\cmTC_19b55.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_19b55.dir\\Debug\\cmTC_19b55.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_c207d.dir\\Debug\\cmTC_c207d.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_c207d.dir\\Debug\\cmTC_c207d.tlog\\unsuccessfulbuild".
         ClCompile:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19b55.dir\\Debug\\\\" /Fd"cmTC_19b55.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\CheckFunctionExists.c"
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c207d.dir\\Debug\\\\" /Fd"cmTC_c207d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.41.34123 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19b55.dir\\Debug\\\\" /Fd"cmTC_19b55.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c207d.dir\\Debug\\\\" /Fd"cmTC_c207d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\Debug\\cmTC_19b55.exe" /INCREMENTAL /ILK:"cmTC_19b55.dir\\Debug\\cmTC_19b55.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-pydu5g/Debug/cmTC_19b55.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Proj/build/CMakeFiles/CMakeScratch/TryCompile-pydu5g/Debug/cmTC_19b55.lib" /MACHINE:X64  /machine:x64 cmTC_19b55.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\cmTC_19b55.vcxproj]
-        Compilazione progetto "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\cmTC_19b55.vcxproj" (destinazioni predefinite) NON COMPLETATA.
+          D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\Debug\\cmTC_c207d.exe" /INCREMENTAL /ILK:"cmTC_c207d.dir\\Debug\\cmTC_c207d.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-450kbc/Debug/cmTC_c207d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/suggestive_contours/build/CMakeFiles/CMakeScratch/TryCompile-450kbc/Debug/cmTC_c207d.lib" /MACHINE:X64  /machine:x64 cmTC_c207d.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\cmTC_c207d.vcxproj]
+        Compilazione progetto "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\cmTC_c207d.vcxproj" (destinazioni predefinite) NON COMPLETATA.
         
         Compilazione NON RIUSCITA.
         
-        "D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\cmTC_19b55.vcxproj" (destinazione predefinita) (1) ->
+        "D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\cmTC_c207d.vcxproj" (destinazione predefinita) (1) ->
         (destinazione: Link) -> 
-          LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\Proj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pydu5g\\cmTC_19b55.vcxproj]
+          LINK : fatal error LNK1104: impossibile aprire il file 'pthread.lib' [D:\\suggestive_contours\\build\\CMakeFiles\\CMakeScratch\\TryCompile-450kbc\\cmTC_c207d.vcxproj]
         
             Avvisi: 0
             Errori: 1
         
-        Tempo trascorso 00:00:00.83
+        Tempo trascorso 00:00:00.73
         
       exitCode: 1
 ...

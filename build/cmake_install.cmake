@@ -1,8 +1,8 @@
-# Install script for directory: D:/Proj/GeomTP
+# Install script for directory: D:/suggestive_contours
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/tpSubdiv")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/tpSubdiv")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Proj/build/dep/glad/cmake_install.cmake")
-  include("D:/Proj/build/dep/glfw/cmake_install.cmake")
-  include("D:/Proj/build/dep/glm/cmake_install.cmake")
+  include("D:/suggestive_contours/build/dep/glad/cmake_install.cmake")
+  include("D:/suggestive_contours/build/dep/glfw/cmake_install.cmake")
+  include("D:/suggestive_contours/build/dep/glm/cmake_install.cmake")
 
 endif()
 
@@ -55,6 +55,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/Proj/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/suggestive_contours/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
