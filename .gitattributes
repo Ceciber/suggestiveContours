@@ -1,0 +1,7 @@
+# 2. Ignore shader files. These are critical to the project but are written 
+# in GLSL, which can be misclassified or contribute to the wrong language ratio.
+*.glsl linguist-detectable=false
+
+# 3. Explicitly ignore any temporary or project-specific HTML files
+# if they are contributing to the "HTML predominancy" issue.
+*.html linguist-detectable=false
