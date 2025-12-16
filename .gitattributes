@@ -1,7 +1,28 @@
-# 2. Ignore shader files. These are critical to the project but are written 
-# in GLSL, which can be misclassified or contribute to the wrong language ratio.
+# Core Fixes based on Project Report
+##########################################
+# 1. Treat 'libigl' folder as external vendor code and ignore all its files.
+libigl/ linguist-vendor
+
+# 2. Ignore all GLSL shader files.
 *.glsl linguist-detectable=false
 
-# 3. Explicitly ignore any temporary or project-specific HTML files
-# if they are contributing to the "HTML predominancy" issue.
+# Aggressive Fixes for Misclassification
+##########################################
+# 3. Ignore all common HTML-related files.
 *.html linguist-detectable=false
+*.htm linguist-detectable=false
+*.xml linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+
+# 4. If you have an auto-generated documentation folder (e.g., Doxygen):
+docs/ linguist-detectable=false
+
+# 5. If your build system (e.g., CMake) creates a build directory:
+build/ linguist-detectable=false
+
+# 6. Ensure C++ files are correctly identified (usually unnecessary but good practice):
+*.cpp linguist-language=C++
+*.hpp linguist-language=C++
+*.c linguist-language=C++
+*.h linguist-language=C++
