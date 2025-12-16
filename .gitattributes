@@ -1,5 +1,7 @@
 # Fixes for correct language programming labels
 ##########################################
+# 1. Treat 'libigl' folder as external vendor code and ignore all its files.
+libigl/ linguist-vendor
 
 # 2. Ignore all GLSL shader files.
 *.glsl linguist-detectable=false
